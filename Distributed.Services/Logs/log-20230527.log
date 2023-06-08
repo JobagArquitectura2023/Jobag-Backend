@@ -1,0 +1,104 @@
+2023-05-27 18:52:57.442 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 18:52:57.479 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 18:52:57.673 -05:00 [INF] Server desktop-ckst1um:18832:2696d491 successfully announced in 161,9967 ms
+2023-05-27 18:52:57.678 -05:00 [INF] Server desktop-ckst1um:18832:2696d491 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 18:52:57.741 -05:00 [INF] Server desktop-ckst1um:18832:2696d491 all the dispatchers started
+2023-05-27 18:59:06.268 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 18:59:06.305 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 18:59:06.535 -05:00 [INF] Server desktop-ckst1um:17824:0d8b588f successfully announced in 182,7453 ms
+2023-05-27 18:59:06.540 -05:00 [INF] Server desktop-ckst1um:17824:0d8b588f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 18:59:06.623 -05:00 [INF] Server desktop-ckst1um:17824:0d8b588f all the dispatchers started
+2023-05-27 19:03:20.283 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 19:03:20.317 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 19:03:20.545 -05:00 [INF] Server desktop-ckst1um:18400:a2c66a04 successfully announced in 193,2985 ms
+2023-05-27 19:03:20.550 -05:00 [INF] Server desktop-ckst1um:18400:a2c66a04 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 19:03:20.640 -05:00 [INF] Server desktop-ckst1um:18400:a2c66a04 all the dispatchers started
+2023-05-27 19:04:48.532 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 19:04:48.559 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 19:04:48.793 -05:00 [INF] Server desktop-ckst1um:16740:3ff569ae successfully announced in 204,4503 ms
+2023-05-27 19:04:48.799 -05:00 [INF] Server desktop-ckst1um:16740:3ff569ae is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 19:04:48.937 -05:00 [INF] Server desktop-ckst1um:16740:3ff569ae all the dispatchers started
+2023-05-27 19:17:02.179 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 19:17:02.208 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 19:17:02.433 -05:00 [INF] Server desktop-ckst1um:11616:1fb860a3 successfully announced in 196,7868 ms
+2023-05-27 19:17:02.440 -05:00 [INF] Server desktop-ckst1um:11616:1fb860a3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 19:17:02.533 -05:00 [INF] Server desktop-ckst1um:11616:1fb860a3 all the dispatchers started
+2023-05-27 19:23:04.387 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 19:23:04.426 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 19:23:04.646 -05:00 [INF] Server desktop-ckst1um:28816:b7c23e94 successfully announced in 174,9164 ms
+2023-05-27 19:23:04.650 -05:00 [INF] Server desktop-ckst1um:28816:b7c23e94 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 19:23:04.735 -05:00 [INF] Server desktop-ckst1um:28816:b7c23e94 all the dispatchers started
+2023-05-27 20:16:17.378 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 20:16:17.399 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 20:16:17.481 -05:00 [INF] Server desktop-ckst1um:16248:bc716d00 successfully announced in 74,6349 ms
+2023-05-27 20:16:17.483 -05:00 [INF] Server desktop-ckst1um:16248:bc716d00 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 20:16:17.486 -05:00 [INF] Server desktop-ckst1um:16248:bc716d00 all the dispatchers started
+2023-05-27 20:16:17.549 -05:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-05-27 20:16:17.549 -05:00 [INF] Server desktop-ckst1um:16248:bc716d00 caught stopping signal...
+2023-05-27 20:16:17.549 -05:00 [INF] Server desktop-ckst1um:16248:bc716d00 caught stopped signal...
+2023-05-27 20:16:17.549 -05:00 [WRN] Server desktop-ckst1um:16248:bc716d00 caught shutdown signal...
+2023-05-27 20:16:17.550 -05:00 [WRN] Server desktop-ckst1um:16248:bc716d00 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2023-05-27 20:16:17.551 -05:00 [INF] Server desktop-ckst1um:16248:bc716d00 successfully reported itself as stopped in 0,2619 ms
+2023-05-27 20:16:17.551 -05:00 [INF] Server desktop-ckst1um:16248:bc716d00 has been stopped in total 1,9776 ms
+2023-05-27 20:16:55.096 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 20:16:55.122 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 20:16:55.292 -05:00 [INF] Server desktop-ckst1um:17904:b329b49f successfully announced in 143,7602 ms
+2023-05-27 20:16:55.297 -05:00 [INF] Server desktop-ckst1um:17904:b329b49f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 20:16:55.353 -05:00 [INF] Server desktop-ckst1um:17904:b329b49f all the dispatchers started
+2023-05-27 20:18:03.933 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 20:18:03.960 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 20:18:04.124 -05:00 [INF] Server desktop-ckst1um:6896:9b25d569 successfully announced in 139,2245 ms
+2023-05-27 20:18:04.129 -05:00 [INF] Server desktop-ckst1um:6896:9b25d569 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 20:18:04.191 -05:00 [INF] Server desktop-ckst1um:6896:9b25d569 all the dispatchers started
+2023-05-27 20:28:10.113 -05:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2023-05-27 20:28:10.134 -05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-05-27 20:28:10.203 -05:00 [INF] Server desktop-ckst1um:29388:0ff68b8c successfully announced in 61,9646 ms
+2023-05-27 20:28:10.208 -05:00 [INF] Server desktop-ckst1um:29388:0ff68b8c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-05-27 20:28:10.211 -05:00 [INF] Server desktop-ckst1um:29388:0ff68b8c all the dispatchers started
+2023-05-27 20:28:10.284 -05:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2023-05-27 20:28:10.284 -05:00 [INF] Server desktop-ckst1um:29388:0ff68b8c caught stopping signal...
+2023-05-27 20:28:10.284 -05:00 [INF] Server desktop-ckst1um:29388:0ff68b8c caught stopped signal...
+2023-05-27 20:28:10.284 -05:00 [WRN] Server desktop-ckst1um:29388:0ff68b8c caught shutdown signal...
+2023-05-27 20:28:10.285 -05:00 [WRN] Server desktop-ckst1um:29388:0ff68b8c stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2023-05-27 20:28:10.286 -05:00 [INF] Server desktop-ckst1um:29388:0ff68b8c successfully reported itself as stopped in 0,2532 ms
+2023-05-27 20:28:10.286 -05:00 [INF] Server desktop-ckst1um:29388:0ff68b8c has been stopped in total 1,7423 ms

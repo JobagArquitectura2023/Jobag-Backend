@@ -1,0 +1,1728 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Jobag",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Company/Register": {
+      "post": {
+        "tags": [
+          "Company"
+        ],
+        "summary": "Permite registrar una compañía",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegisterCompanyDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CompanyDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Company/Login": {
+      "post": {
+        "tags": [
+          "Company"
+        ],
+        "summary": "Permite a una compañía ingresar al sistema",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginCompanyDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoginCompanyResponseDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Company/Get": {
+      "get": {
+        "tags": [
+          "Company"
+        ],
+        "summary": "Permite obtener una compañía por id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "companyId",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CompanyDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Company/Add": {
+      "post": {
+        "tags": [
+          "Company"
+        ],
+        "summary": "Permite agregar una compañía",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AddCompanyDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Company/Update": {
+      "put": {
+        "tags": [
+          "Company"
+        ],
+        "summary": "Permite actualizar una compañía",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateCompanyDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/JobLabel/Get": {
+      "get": {
+        "tags": [
+          "JobLabel"
+        ],
+        "summary": "Permite obtener una etiqueta de trabajo por id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "jobLabelId",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/JobLabelDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/JobLabel/Add": {
+      "post": {
+        "tags": [
+          "JobLabel"
+        ],
+        "summary": "Permite agregar una etiqueta de trabajo",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AddJobLabelDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/JobLabel/Update": {
+      "put": {
+        "tags": [
+          "JobLabel"
+        ],
+        "summary": "Permite actualizar una etiqueta de trabajo",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/JobLabelDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/JobOffer/Get": {
+      "get": {
+        "tags": [
+          "JobOffer"
+        ],
+        "summary": "Permite obtener una oferta de trabajo por id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "jobOfferId",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/JobOfferDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/JobOffer/GetAll": {
+      "get": {
+        "tags": [
+          "JobOffer"
+        ],
+        "summary": "Permite obtener todas las ofertas de trabajo",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/JobOfferDtoListJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/JobOffer/GetByCompany": {
+      "get": {
+        "tags": [
+          "JobOffer"
+        ],
+        "summary": "Permite obtener todas las ofertas de trabajo de una compañía",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/JobOfferDtoListJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/JobOffer/Add": {
+      "post": {
+        "tags": [
+          "JobOffer"
+        ],
+        "summary": "Permite agregar una oferta de trabajo",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AddJobOfferDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/JobOffer/Update": {
+      "put": {
+        "tags": [
+          "JobOffer"
+        ],
+        "summary": "Permite actualizar una compañía",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/JobOfferDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Postulant/Register": {
+      "post": {
+        "tags": [
+          "Postulant"
+        ],
+        "summary": "Permite registrar un postulante",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegisterPostulantDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PostulantDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Postulant/Login": {
+      "post": {
+        "tags": [
+          "Postulant"
+        ],
+        "summary": "Permite a un postulante ingresar al sistema",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginPostulantDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoginPostulantResponseDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Postulant/Get": {
+      "get": {
+        "tags": [
+          "Postulant"
+        ],
+        "summary": "Permite obtener un postulante por id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "postulantId",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PostulantDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Postulant/Add": {
+      "post": {
+        "tags": [
+          "Postulant"
+        ],
+        "summary": "Permite agregar un postulante",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AddPostulantDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Postulant/Update": {
+      "put": {
+        "tags": [
+          "Postulant"
+        ],
+        "summary": "Permite actualizar un postulante",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdatePostulantDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Postulation/Get": {
+      "get": {
+        "tags": [
+          "Postulation"
+        ],
+        "summary": "Permite obtener una postulación por id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "postulationId",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PostulationDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Postulation/Add": {
+      "post": {
+        "tags": [
+          "Postulation"
+        ],
+        "summary": "Permite agregar una postulación",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AddPostulationDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Postulation/Update": {
+      "put": {
+        "tags": [
+          "Postulation"
+        ],
+        "summary": "Permite actualizar una postulación por id",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostulationDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Role/Get": {
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "summary": "Permite obtener un rol por id",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "roleId",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/RoleDtoJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Role/Add": {
+      "post": {
+        "tags": [
+          "Role"
+        ],
+        "summary": "Permite agregar un rol",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AddRoleDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/Role/Update": {
+      "put": {
+        "tags": [
+          "Role"
+        ],
+        "summary": "Permite actualizar un rol",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RoleDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/SavedJobOffers/Add": {
+      "post": {
+        "tags": [
+          "SavedJobOffers"
+        ],
+        "summary": "Permite agregar una oferta de trabajos a la lista de favoritos del postulante",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AddSavedJobOffersDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/SavedJobOffers/Update": {
+      "put": {
+        "tags": [
+          "SavedJobOffers"
+        ],
+        "summary": "Permite editar una oferta de trabajo guardada",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/SavedJobOffersDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    },
+    "/api/SavedJobOffers/GetByPostulant": {
+      "get": {
+        "tags": [
+          "SavedJobOffers"
+        ],
+        "summary": "Permite obtener las ofertas de trabajo guardadas por un postulante",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/SavedJobOffersDtoListJsonResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/StringJsonResult"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AddCompanyDto": {
+      "type": "object",
+      "properties": {
+        "companyName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "websiteUrl": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        },
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AddJobLabelDto": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "AddJobOfferDto": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "wage": {
+          "format": "double",
+          "type": "number"
+        },
+        "snippet": {
+          "type": "string"
+        },
+        "bannerPicture": {
+          "type": "string"
+        },
+        "hasHired": {
+          "type": "boolean"
+        },
+        "companyId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AddPostulantDto": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "salary": {
+          "format": "double",
+          "type": "number"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "workingPlaces": {
+          "type": "string"
+        },
+        "languages": {
+          "type": "string"
+        },
+        "skills": {
+          "type": "string"
+        },
+        "studyCenter": {
+          "type": "string"
+        },
+        "about": {
+          "type": "string"
+        },
+        "profilePicture": {
+          "type": "string"
+        },
+        "bannerPicture": {
+          "type": "string"
+        },
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AddPostulationDto": {
+      "type": "object",
+      "properties": {
+        "isCompleted": {
+          "type": "boolean"
+        },
+        "jobOfferId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AddRoleDto": {
+      "type": "object",
+      "properties": {
+        "roleName": {
+          "type": "string"
+        }
+      }
+    },
+    "AddSavedJobOffersDto": {
+      "type": "object",
+      "properties": {
+        "postulantId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "jobOfferId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CompanyDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "websiteUrl": {
+          "type": "string"
+        },
+        "profilePicture": {
+          "type": "string"
+        },
+        "bannerPicture": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "passwordHash": {
+          "format": "byte",
+          "type": "string"
+        },
+        "passwordSalt": {
+          "format": "byte",
+          "type": "string"
+        },
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CompanyDtoJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/CompanyDto"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "JobLabelDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "JobLabelDtoJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/JobLabelDto"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "JobOfferDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "wage": {
+          "format": "double",
+          "type": "number"
+        },
+        "snippet": {
+          "type": "string"
+        },
+        "bannerPicture": {
+          "type": "string"
+        },
+        "hasHired": {
+          "type": "boolean"
+        },
+        "companyId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "JobOfferDtoJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/JobOfferDto"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "JobOfferDtoListJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/JobOfferDto"
+          }
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "LoginCompanyDto": {
+      "required": [
+        "email",
+        "password"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "minLength": 1,
+          "type": "string"
+        }
+      }
+    },
+    "LoginCompanyResponseDto": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string"
+        },
+        "company": {
+          "$ref": "#/definitions/CompanyDto"
+        }
+      }
+    },
+    "LoginCompanyResponseDtoJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/LoginCompanyResponseDto"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "LoginPostulantDto": {
+      "required": [
+        "email",
+        "password"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "minLength": 1,
+          "type": "string"
+        }
+      }
+    },
+    "LoginPostulantResponseDto": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string"
+        },
+        "postulant": {
+          "$ref": "#/definitions/PostulantDto"
+        }
+      }
+    },
+    "LoginPostulantResponseDtoJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/LoginPostulantResponseDto"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "PostulantDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "salary": {
+          "format": "double",
+          "type": "number"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "workingPlaces": {
+          "type": "string"
+        },
+        "languages": {
+          "type": "string"
+        },
+        "skills": {
+          "type": "string"
+        },
+        "studyCenter": {
+          "type": "string"
+        },
+        "about": {
+          "type": "string"
+        },
+        "profilePicture": {
+          "type": "string"
+        },
+        "bannerPicture": {
+          "type": "string"
+        },
+        "passwordHash": {
+          "format": "byte",
+          "type": "string"
+        },
+        "passwordSalt": {
+          "format": "byte",
+          "type": "string"
+        },
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "PostulantDtoJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/PostulantDto"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "PostulationDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "isCompleted": {
+          "type": "boolean"
+        },
+        "jobOfferId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "PostulationDtoJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/PostulationDto"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "RegisterCompanyDto": {
+      "required": [
+        "confirmPassword",
+        "email",
+        "password",
+        "roleId"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "minLength": 4,
+          "type": "string"
+        },
+        "confirmPassword": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "RegisterPostulantDto": {
+      "required": [
+        "confirmPassword",
+        "email",
+        "password",
+        "roleId"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "minLength": 4,
+          "type": "string"
+        },
+        "confirmPassword": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "RoleDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "roleName": {
+          "type": "string"
+        }
+      }
+    },
+    "RoleDtoJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/RoleDto"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "SavedJobOffersDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "postulantId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "jobOfferId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "SavedJobOffersDtoListJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SavedJobOffersDto"
+          }
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "StringJsonResult": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string"
+        },
+        "warning": {
+          "type": "boolean"
+        }
+      }
+    },
+    "UpdateCompanyDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "websiteUrl": {
+          "type": "string"
+        },
+        "profilePicture": {
+          "type": "string"
+        },
+        "bannerPicture": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdatePostulantDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "salary": {
+          "format": "double",
+          "type": "number"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "workingPlaces": {
+          "type": "string"
+        },
+        "languages": {
+          "type": "string"
+        },
+        "studyCenter": {
+          "type": "string"
+        },
+        "skills": {
+          "type": "string"
+        },
+        "about": {
+          "type": "string"
+        },
+        "bannerPicture": {
+          "type": "string"
+        },
+        "profilePicture": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
